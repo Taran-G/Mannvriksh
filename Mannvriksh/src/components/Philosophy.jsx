@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 const Philosophy = () => {
   return (
     <section id="philosophy" className="py-32 bg-stone-900 text-stone-50 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-emerald-900/20 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-200 h-200 bg-emerald-900/20 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -37,7 +37,7 @@ const Philosophy = () => {
             </div>
           </div>
           
-          <div className="relative w-full aspect-[4/3] rounded-3xl bg-stone-800 shadow-[0_20px_50px_rgb(0,0,0,0.5)] z-10">
+          <div className="relative w-full aspect-4/3 rounded-3xl bg-stone-800 shadow-[0_20px_50px_rgb(0,0,0,0.5)] z-10">
             <img 
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800" 
               alt="Therapy session" 
