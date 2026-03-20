@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vite": "^5.0.0",
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.2.2",
     "lightningcss": "^1.32.0",
