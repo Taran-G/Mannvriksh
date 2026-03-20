@@ -20,10 +20,8 @@ import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 
 // Local Component for the top banner
-const EmergencyBanner = () => (
-
-<div className="bg-rose-50 border-b border-rose-100 text-rose-800 px-4 py-2.5 text-xs text-center flex items-center justify-center gap-2 font-medium z-60 relative">
-<ShieldAlert className="w-4 h-4 shrink-0" />
+const EmergencyBanner = ({ scrolled }) => (
+<div className={`fixed top-0 left-0 right-0 bg-rose-50 border-b border-rose-100 text-rose-800 px-4 py-2.5 text-xs text-center flex items-center justify-center gap-2 font-medium z-50 transition-transform duration-300 ${scrolled ? '-translate-y-full' : 'translate-y-0'}`}><ShieldAlert className="w-4 h-4 shrink-0" />
 <span>If you are in a crisis, call the <strong>Kiran Helpline at 1800-599-0019</strong>.</span>
 </div>
 );
@@ -36,27 +34,27 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const [isSubmitted, setIsSubmitted] = useState(false);
 
 // --- LOGIC ---
-const handleBookingSubmit = (e) => {
-e.preventDefault();
-setIsSubmitted(true);
-setTimeout(() => {
-setIsModalOpen(false);
-setIsSubmitted(false);
-}, 3000);
+const handleBookingSubmit = () => {
+  setIsSubmitted(true);
+  
+  setTimeout(() => {
+    setIsModalOpen(false);
+    setIsSubmitted(false);
+  }, 3000);
 };
 
 // --- RENDER ---
 return (
 <div className="min-h-screen bg-[#FDFBF7] font-sans text-stone-800 selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden">
-
-  <EmergencyBanner />
   
+<EmergencyBanner scrolled={scrolled} />  
   <Navbar 
     scrolled={scrolled} 
     onBookClick={() => setIsModalOpen(true)}
     isMenuOpen={isMenuOpen}
     setIsMenuOpen={setIsMenuOpen}
   />
+ 
   
   <main>
     <Hero onBookClick={() => setIsModalOpen(true)} />
@@ -71,6 +69,7 @@ return (
   <Footer />
 
   <BookingModal 
+
     isOpen={isModalOpen}
     onClose={() => setIsModalOpen(false)}
     isSubmitted={isSubmitted}

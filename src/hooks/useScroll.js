@@ -28,5 +28,5 @@ export const useScroll = (threshold = 20) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [threshold]);
 
-  return scrolled;
+  return { scrolled }; 
 };
