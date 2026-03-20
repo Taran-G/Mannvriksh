@@ -1,1 +1,10 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure the body doesn't have default margins */
+body {
+  margin: 0;
+  padding: 0;
+}
