@@ -1,14 +1,18 @@
 import React from "react";
 import { X, CheckCircle2, ShieldAlert } from "lucide-react";
 import useSendEmail from "../hooks/useSendEmail";
+import useSendToGoogleSheets from "../hooks/useSendToGoogleSheets";
 
 const BookingModal = ({ isOpen, onClose, isSubmitted, onSubmit }) => {
   if (!isOpen) return null;
 
+
   const { formRef, sendEmail } = useSendEmail();
+  const { sendToSheets } = useSendToGoogleSheets(formRef);
 
   const handleSubmit = (e) => {
     sendEmail(e);
+    sendToSheets(e);
     onSubmit();
   };
 
