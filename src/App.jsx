@@ -45,39 +45,38 @@ const handleBookingSubmit = () => {
 
 // --- RENDER ---
 return (
-<div className="min-h-screen bg-[#FDFBF7] font-sans text-stone-800 selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden">
-  
-<EmergencyBanner scrolled={scrolled} />  
-  <Navbar 
-    scrolled={scrolled} 
-    onBookClick={() => setIsModalOpen(true)}
-    isMenuOpen={isMenuOpen}
-    setIsMenuOpen={setIsMenuOpen}
-  />
- 
-  
-  <main>
-    <Hero onBookClick={() => setIsModalOpen(true)} />
-    <TrustBar />
-    <Philosophy />
-    <Services services={DATA.services} onBookClick={() => setIsModalOpen(true)} />
-    <Reviews reviews={DATA.reviews} />
-    <Team team={DATA.team} />
-    <FAQ faqs={DATA.faqs} />
-  </main>
+  <div className="min-h-screen bg-[#FDFBF7] font-sans text-stone-800 selection:bg-emerald-200 selection:text-emerald-900 overflow-x-hidden">
+    <EmergencyBanner scrolled={scrolled} />
+    <Navbar
+      scrolled={scrolled}
+      onBookClick={() => setIsModalOpen(true)}
+      isMenuOpen={isMenuOpen}
+      setIsMenuOpen={setIsMenuOpen}
+    />
 
-  <Footer />
+    <main
+      className={`transition-all duration-300 ${scrolled ? "pt-0" : "pt-10"}`}
+    >
+      <Hero onBookClick={() => setIsModalOpen(true)} />
+      <TrustBar />
+      <Philosophy />
+      <Services
+        services={DATA.services}
+        onBookClick={() => setIsModalOpen(true)}
+      />
+      <Reviews reviews={DATA.reviews} />
+      <Team team={DATA.team} />
+      <FAQ faqs={DATA.faqs} />
+    </main>
 
-  <BookingModal 
+    <Footer />
 
-    isOpen={isModalOpen}
-    onClose={() => setIsModalOpen(false)}
-    isSubmitted={isSubmitted}
-    onSubmit={handleBookingSubmit}
-  />
-
-</div>
-
-
+    <BookingModal
+      isOpen={isModalOpen}
+      onClose={() => setIsModalOpen(false)}
+      isSubmitted={isSubmitted}
+      onSubmit={handleBookingSubmit}
+    />
+  </div>
 );
 }
