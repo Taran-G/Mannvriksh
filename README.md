@@ -1,16 +1,33 @@
-# React + Vite
+Mannvriksh
+A personal freelance — built with React, Vite, and Tailwind CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🛠 Tech Stack
+Category       Tech
+Framework      React 19
+Bundler        Vite 5
+Styling        Tailwind CSS 4
+Icons          Lucide React
+Contact Form   EmailJS
+Deployment     Netlify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📂 Project Structure
+Mannvriksh/
+├── public/          # Static assets
+├── src/             # React components & pages
+├── index.html       # Entry HTML
+├── vite.config.js   # Vite configuration
+└── package.json
 
-## React Compiler
+🚀 Getting Started
+bash# Clone the repo
+git clone https://github.com/Taran-G/Mannvriksh.git
+cd Mannvriksh
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Start dev server
+npm run dev
+Available Scripts
+CommandDescriptionnpm run devStart local dev servernpm run buildBuild for productionnpm run previewPreview production buildnpm run lintRun ESLint
