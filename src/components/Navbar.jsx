@@ -2,15 +2,15 @@ import React from 'react';
 import { Calendar, Menu, X } from 'lucide-react';
 
 const Navbar = ({ scrolled, onBookClick, isMenuOpen, setIsMenuOpen }) => {
-  const navItems = ['Home', 'Philosophy', 'Solutions', 'Reviews', 'Team', 'Contact'];
+  const navItems = ['Home', 'Philosophy', 'Solutions','Events', 'Reviews', 'Team', 'Contact'];
 
   return (
 <nav style={{ top: scrolled ? '0px' : '38px' }} className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-3 border-b border-stone-200' : 'bg-transparent py-5'}`}>      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-full">
           <div className="flex items-center h-full">
             <img 
-              src="https://mannvriksh.com/wp-content/uploads/2025/06/logo_png-1.png" 
-              alt="MannVriksh Logo" 
+              src="/images/mannvrisk-logo_png-1.png" 
+              alt="MannVriksh" 
               className="h-10 sm:h-12 w-auto object-contain cursor-pointer"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />

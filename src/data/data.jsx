@@ -28,6 +28,69 @@ export const DATA = {
       color: "bg-emerald-50" 
     }
   ],
+ events: [
+  {
+    name: "St. Xavier’s School",
+    location: "Greater Noida",
+    img: "/images/St.-Xaviers-School_page-0001.webp"
+  },
+  {
+    name: "Manav Rachna University",
+    location: "Faridabad",
+    img: "/images/Manav-Rachna-university_page-0001.webp"
+  },
+  
+  {
+    name: "Basant Valley Global School",
+    location: "Gurugram",
+    img: "/images/basant-valley_page-0001.webp"
+  },
+  
+  {
+    name: "Scholars Rosary School",
+    location: "Rohtak",
+    img: "/images/sc1.webp"
+  },
+  
+  {
+    name: "American Excelsior School",
+    location: "Gurugram",
+    img: "/images/ae1.webp"
+  },
+  
+  {
+    name: "Nrityarang Academy",
+    location: "Gurugram",
+    type: "Organization",
+    img: "/images/nit1.webp"
+  },
+  {
+    name: "Anything Will Do",
+    location: "Kalkaji, Delhi",
+    type: "Organization",
+    img: "/images/Anything-will-do-NGO_page-3.webp"
+  },
+   {
+    name: "Gems international School",
+    location: "Delhi",
+    type: "School",
+    img: "/images/Newsletter_page-0001.webp"
+  },
+  
+
+
+  
+
+  // ⭐ Special Collaborations
+  {
+    name: "Smoke Free India Campaign",
+    location: "Satyam College of Communication, Noida",
+    type: "Campaign",
+    img: "/images/sat1.webp"
+  },
+  
+
+],
   team: [
     { 
       name: "Kumud Aneja", 
@@ -36,17 +99,20 @@ export const DATA = {
       img: "/images/team1.webp" 
     },
     { 
-      name: "Smriti Maini", 
-      role: "Counselling Psychologist", 
-      bio: "Currently pursuing her PhD, Smriti has extensive clinical experience across multi-specialty hospitals and is a certified laughter yoga leader.", 
-      img: "/images/team2.webp" 
-    },
-    { 
       name: "Bhanuja", 
       role: "Mental Health Facilitator", 
       bio: "A compassionate psychologist trained in evidence-based approaches, helping clients navigate anxiety, emotional dysregulation, and relationship challenges.", 
+      img: "/images/team2.webp"  
+    },
+    
+    { 
+      name: "Smriti Maini", 
+      role: "Counselling Psychologist", 
+      bio: "Currently pursuing her PhD, Smriti has extensive clinical experience across multi-specialty hospitals and is a certified laughter yoga leader.", 
+      
       img: "/images/team3.webp" 
-    }
+    },
+    
   ],
   reviews: [
     { 

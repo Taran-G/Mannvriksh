@@ -13,6 +13,7 @@ import Hero from './components/Hero';
 import TrustBar from './components/TrustBar';
 import Philosophy from './components/Philosophy';
 import Services from './components/Services';
+import Events from './components/Events';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
@@ -64,6 +65,10 @@ return (
         services={DATA.services}
         onBookClick={() => setIsModalOpen(true)}
       />
+      <Events 
+      events={DATA.events}
+      />
+      
       <Reviews reviews={DATA.reviews} />
       <Team team={DATA.team} />
       <FAQ faqs={DATA.faqs} />
