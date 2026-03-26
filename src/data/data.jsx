@@ -33,19 +33,19 @@ export const DATA = {
       name: "Kumud Aneja", 
       role: "Founder, Mental Health Advocate", 
       bio: "With over 18 years of experience, Kumud creates safe spaces for individuals to reflect, reset, and rise. Certified in CBT, ACT, IPT, and Couple Counselling.", 
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" 
+      img: "/images/team1.webp" 
     },
     { 
       name: "Smriti Maini", 
       role: "Counselling Psychologist", 
       bio: "Currently pursuing her PhD, Smriti has extensive clinical experience across multi-specialty hospitals and is a certified laughter yoga leader.", 
-      img: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80&w=600" 
+      img: "/images/team2.webp" 
     },
     { 
       name: "Bhanuja", 
       role: "Mental Health Facilitator", 
       bio: "A compassionate psychologist trained in evidence-based approaches, helping clients navigate anxiety, emotional dysregulation, and relationship challenges.", 
-      img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600" 
+      img: "/images/team3.webp" 
     }
   ],
   reviews: [
