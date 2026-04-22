@@ -1,6 +1,4 @@
-
-
- function useSendToGoogleSheets(formRef) { 
+function useSendToGoogleSheets(formRef) { 
      
      const sendToSheets = (e) => {
         e.preventDefault();
@@ -12,7 +10,7 @@
         message:form.message.value
      }
 
-        fetch("https://script.google.com/macros/s/AKfycbzGWJ1WxVifYaxEYMY-uOZ6ofcU-do8bMkYq0Bcmr9xrd40KU_9Op1hRiU8HW1xGClG/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbx-fj-QxKtu8_QBd4htW1cEk5P5PMdNIza8pzafSgWwDBW0zWCJx2TcgHPIlQcJX4uWwA/exec", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify(formData),

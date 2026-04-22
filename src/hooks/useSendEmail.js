@@ -9,6 +9,10 @@ import emailjs from '@emailjs/browser';
         emailjs
         .sendForm('service_msack18', 'template_6pwsmrc', formRef.current, {
         publicKey: 'DaPXYRYJippOSe6bc',
+
+        // .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        // publicKey: 'YOUR_PUBLIC_KEY',
+
       })
       .then(        
         () => {
